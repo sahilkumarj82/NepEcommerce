@@ -74,7 +74,7 @@ class Product(models.Model):
     sub_category = models.ForeignKey(SubCategory,on_delete=models.CASCADE)
     image1 = models.ImageField(upload_to = 'media')#upload Image code
     image2 = models.ImageField(upload_to = 'media')#upload Image code
-    image3 = models.ImageField(upload_to = 'media',null=True)#upload Image code
+    image3 = models.ImageField(upload_to = 'media')#upload Image code
     image4 = models.ImageField(upload_to = 'media',null=True)#upload Image code
     brief_Description = models.TextField(blank = True)
     description = models.TextField(blank = True)

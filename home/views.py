@@ -21,6 +21,7 @@ class HomeView(Base):
         self.views['hots'] = Product.objects.filter(labels = 'hot') # filtering products from labels from models
         self.views['sales'] = Product.objects.filter(labels = 'sale') # filtering products from labels from models
         self.views['news'] = Product.objects.filter(labels = 'new') # filtering products from labels from models
+        self.views['allProducts']  = Product.objects.all()
         self.views['categories']  = Category.objects.all()
         return render(request,'index-1.html',self.views)
 
